@@ -2,7 +2,7 @@
 title: about
 name: "Ahmad Abqory Mudabighi"
 designation: "FrontEnd Developer"
-location: Bogor, Sujakaya 001/002
+location: Bogor, Sujakaya
 pronouns: "he/him/pria"
 website: "https://abqory.is-a.dev"
 ---
