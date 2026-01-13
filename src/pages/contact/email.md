@@ -1,5 +1,5 @@
 ---
 title: Email
 icon: carbon:email
-url: a.abqory@proton.me
+url: mailto:a.abqory@proton.me
 ---
