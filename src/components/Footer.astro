@@ -1,7 +1,5 @@
 ---
-import { Image } from "astro:assets";
-import flagImage from "../assets/gl_flag_128x.png";
-
+const flagImage = "https://raw.githubusercontent.com/abqoryme/astro-cv/refs/heads/main/src/assets/gl_flag_128x.png";
 const getYear = () => new Date().getFullYear().toString();
 ---
 
@@ -15,7 +13,7 @@ const getYear = () => new Date().getFullYear().toString();
       rel="noopener noreferrer">𝒜𝒷𝓆𝑜𝓇𝓎 𝒹𝑒𝓋</a
     >
   </p>
-  <Image
+  <Img
     class="rounded-full w-4 h-4 ml-2 shadow-md border border-black"
     src={flagImage}
     alt="Indonesian Flag"
