@@ -1,8 +1,8 @@
 ---
 import { Icon } from "astro-icon/components";
-import { Image } from "astro:assets";
 import * as about from "../pages/about/about.md";
-import profileImage from "https://raw.githubusercontent.com/abqoryme/astro-cv/refs/heads/main/src/assets/profile.webp";
+
+const profileImage = "https://raw.githubusercontent.com/abqoryme/astro-cv/main/src/assets/profile.webp";
 
 const fullName = about.frontmatter.name;
 const nameParts = fullName.split(" ");
@@ -17,35 +17,41 @@ const lastName = nameParts.slice(-1).join("");
     <div
       class="flex-shrink-0 w-20 md:w-24 rounded-full shadow-sm overflow-hidden"
     >
-<img
-  alt={`Profile picture of ${about.frontmatter.name}`}
-  src={profileImage}
-  width="120"
-  height="120"
-  loading="eager"
-  class="grayscale-[50] hover:grayscale-0"
-/>
+      <img
+        alt={`Profile picture of ${about.frontmatter.name}`}
+        src={profileImage}
+        width="120"
+        height="120"
+        loading="eager"
+        class="grayscale-[50] hover:grayscale-0 w-full h-full object-cover"
+      />
     </div>
 
     <div class="text-center">
       <div
         class="flex justify-center md:justify-between items-center mb-2 relative"
       >
-        <h1 class="text-3xl font-extrabold tracking-tight md:text-3xl relative">
-    {firstLineName}
-    <div class="absolute top-0 left-full ml-2 -mt-4">
-    <div class="badge w-max text-sm font-light badge-outline shadow-lg">
-        {about.frontmatter.pronouns}
+        <div>
+          <h1 class="text-3xl font-extrabold tracking-tight md:text-3xl relative">
+            {firstLineName}
+          </h1>
+
+          <div class="text-3xl font-extrabold tracking-tight md:text-3xl">
+            {lastName}
+          </div>
+        </div>
+
+        <div class="absolute top-0 left-full ml-2 -mt-4">
+          <div class="badge w-max text-sm font-light badge-outline shadow-lg">
+            {about.frontmatter.pronouns}
+          </div>
+        </div>
       </div>
-    </div>
-  <div class="text-3xl font-extrabold tracking-tight md:text-3xl relative">
-  {lastName}
-  </div>
-  </h1>
-      </div>
+
       <h2 class="text-lg mb-2 text-secondary">
         {about.frontmatter.designation}
       </h2>
+
       <div class="flex items-center justify-center mt-1">
         <Icon name="carbon:location" class="w-4 h-4 mr-1" />
         <p class="text-sm text-secondary">{about.frontmatter.location}</p>
