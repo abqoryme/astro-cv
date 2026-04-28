@@ -17,14 +17,14 @@ const lastName = nameParts.slice(-1).join("");
     <div
       class="flex-shrink-0 w-20 md:w-24 rounded-full shadow-sm overflow-hidden"
     >
-      <Image
-        alt={`Profile picture of ${about.frontmatter.name}`}
-        src={profileImage}
-        width={120}
-        height={120}
-        loading="eager"
-        class="grayscale-[50] hover:grayscale-0"
-      />
+<img
+  alt={`Profile picture of ${about.frontmatter.name}`}
+  src={profileImage}
+  width="120"
+  height="120"
+  loading="eager"
+  class="grayscale-[50] hover:grayscale-0"
+/>
     </div>
 
     <div class="text-center">
