@@ -1,9 +1,9 @@
 {
   "name": "astro-cv",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "engines": {
-    "node": "24.0.0"
+    "node": "<=24.0.0"
   },
   "scripts": {
     "dev": "astro dev",
@@ -13,20 +13,20 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^5.1.5",
-    "@astrojs/vercel": "^8.0.4",
-    "@fontsource-variable/dm-sans": "^5.0.5",
-    "@iconify-json/carbon": "^1.1.31",
-    "@iconify-json/mdi": "^1.1.64",
-    "astro": "^5.16.0",
-    "astro-compress": "^2.2.21",
-    "astro-icon": "^1.1.0",
-    "framer-motion": "^11.18.2",
-    "tailwindcss": "^3.4.17",
-    "theme-change": "^2.5.0"
+    "@astrojs/tailwind": "*",
+    "@astrojs/vercel": "*",
+    "@fontsource-variable/dm-sans": "*",
+    "@iconify-json/carbon": "*",
+    "@iconify-json/mdi": "*",
+    "astro": "*",
+    "astro-compress": "*",
+    "astro-icon": "*",
+    "framer-motion": "*",
+    "tailwindcss": "*",
+    "theme-change": "*"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.10",
-    "daisyui": "^4.12.24"
+    "@tailwindcss/typography": "*",
+    "daisyui": "*"
   }
 }
